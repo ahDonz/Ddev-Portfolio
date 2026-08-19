@@ -1,5 +1,6 @@
 
 import './Expertise.css'
+import { Link } from "react-router-dom";
 
 function Expertise() {
     return (
@@ -53,8 +54,28 @@ function Expertise() {
         </section>
 
 
-        <div className="expertise_skill">
-            
+      <div className="expertise_skill">
+            <div className="expertise_header">
+                <h2>Stack</h2>
+
+                <Link to="/stack">
+                    View all →
+                </Link>
+            </div>
+
+            <div className="expertise_list_stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Vite</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>REST API</span>
+                <span>Git</span>
+                <span>GitHub</span>
+            </div>
         </div>
 
 

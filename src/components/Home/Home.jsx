@@ -1,12 +1,16 @@
 import Banner from '../MainContent/Banner'
 import Expertise from '../Expertise/Expertise';
+import Blog from '../Blog/Blog';
 
 function Home(){
 
 return(
     <>
-    <Banner/>
-    <Expertise/>
+    <div className="main_layout site-wrapper">
+        <Banner/>
+        <Expertise/>
+        <Blog/>
+    </div>
 
 </>
 )
