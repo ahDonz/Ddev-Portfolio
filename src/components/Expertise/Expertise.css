@@ -1,0 +1,23 @@
+.expertise_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.expertise_card {
+    min-height: 300px;
+    padding: 30px;
+    border: 1px solid #000;
+}
+
+.expertise_card span {
+    font-size: 14px;
+}
+
+.expertise_card h3 {
+    margin: 40px 0 20px;
+}
+
+.expertise_card p {
+    line-height: 1.6;
+}
