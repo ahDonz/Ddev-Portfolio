@@ -1,22 +1,18 @@
-import Banner from '../MainContent/Banner'
-import Expertise from '../Expertise/Expertise';
-import Blog from '../Blog/Blog';
+import Banner from "../Banner/Banner"
+import Navbar from "../Navbar/Navbar"
+import Project from "../Project/Project"
+import About from "../About/About"
 
-function Home(){
-
-return(
+const Home = () => {
+  return (
     <>
-    <div className="main_layout site-wrapper">
-        <Banner/>
-        <Expertise/>
-        <Blog/>
-    </div>
-
-</>
-)
-
-
+     <div className="home-wrapper ">
+       <Navbar></Navbar>
+      <Banner></Banner>
+      <Project></Project>
+      <About/>
+     </div>
+    </>
+  )
 }
-
-
-export default Home;
+export default Home

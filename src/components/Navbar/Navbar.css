@@ -1,8 +1,0 @@
-.dev_logo{width: 100%; max-width: 80px;}
-
-.nav-wrapper{display: flex; justify-content: space-between; align-items: center; border: 1px solid black;}
-
-
-.nav-links { max-width: 490px; width: 59%; border: 1px solid; display: flex; justify-content: space-between; font-weight: normal; font-size: 17px; }
-
-.nav-link a{color: rgba(81, 78, 78, 0.8) !important;}
