@@ -36,8 +36,8 @@ const Project = () => {
   return (
     <section className="project_con px-5 pb-29" >
 
-      <div className="project-info flex justify-between items-center w-full font-bold mbe-5">
-        <h2>SELECTED WORK</h2>
+      <div className="project-info flex justify-between items-center w-full font-bold mbe-5 ">
+        <h2 className="text-sm tracking-wider ">SELECTED WORK</h2>
 
         <Link
           to="/projects"

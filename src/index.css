@@ -1,22 +1,30 @@
-
 @import "tailwindcss";
 
 :root {
-    --priFont: "Geist", sans-serif;  
-    --secFont: "Manrope", sans-serif;
-    --bodyColor: #111111;
-    --secColor: #666666;
+  --priFont: "Geist", sans-serif;
+  --secFont: "Manrope", sans-serif;
+  --bodyColor: #111111;
+  --secColor: #666666;
 }
-
-*, *::before, *::after { box-sizing: border-box; -moz-box-sizing: border-box; image-rendering: -webkit-optimize-contrast; }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 
+body {
+  background: #f9f9f3;
+}
 
-
-
-
-.site-wrapper{max-width: 1150px; width: 100%; margin: 0 auto; border-inline: 1px solid rgba(75, 66, 66, 0.8);}
+.site-wrapper {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  border-inline: 1px solid rgba(75, 66, 66, 0.8);
+}

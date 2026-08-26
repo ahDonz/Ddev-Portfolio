@@ -31,7 +31,7 @@ const AboutSkills = () => {
 
         </ul>
 
-        <p className="py-5 font-tight text-sm">& always learning new things!</p>
+        {/* <p className="py-5 font-tight text-sm">& always learning new things!</p> */}
       </div>
     </div>
   );
