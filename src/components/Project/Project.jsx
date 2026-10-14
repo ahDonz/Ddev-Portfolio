@@ -6,13 +6,12 @@ import project2 from "../../images/project2.png";
 import project3 from "../../images/project3.png";
 import project4 from "../../images/project4.png";
 
-
 const Project = () => {
   const projects = [
     {
       id: 1,
       image: project1,
-      title: " Excel in Care Home Health Agency LLC  ",
+      title: "Excel in Care Home Health Agency LLC",
       description:
         "Experience compassionate, personalized support designed to make daily life easier and more comfortable. Our dedicated caregivers assist with everyday tasks, ensuring safety, independence, and peace of mind.",
     },
@@ -21,29 +20,31 @@ const Project = () => {
       image: project2,
       title: "Quality Care Pharmacy",
       description:
-        "Welcome to Quality Care Pharmacy, your trusted partner in health and wellness. We are committed to providing safe, reliable, and personalized pharmaceutical care, ensuring you receive the right medication",
+        "Welcome to Quality Care Pharmacy, your trusted partner in health and wellness. We are committed to providing safe, reliable, and personalized pharmaceutical care, ensuring you receive the right medication.",
     },
     {
       id: 3,
       image: project3,
-      title: "DB WELLNESS AND IV THERAPY LLC",
+      title: "DB Wellness and IV Therapy LLC",
       description:
-        "DB Wellness and IV Therapy LLC provides IV therapy and wellness services focused on clear, structured care. The team handles each session from intake to post treatment guidance using a consistent process. Clients visit for hydration support, recovery  ",
+        "DB Wellness and IV Therapy LLC provides IV therapy and wellness services focused on clear, structured care. The team handles each session from intake to post treatment guidance.",
     },
     {
       id: 4,
       image: project4,
-       title: "Lindsey Hernandez Counseling LLC",
+      title: "Lindsey Hernandez Counseling LLC",
       description:
-        "Lindsey Hernandez Counseling LLC, we provide trauma-informed counseling for children, teens, and adults across Pennsylvania. In real sessions, we often meet clients who feel stuck in cycles of anxiety, anger, or past trauma, unsure how to move forward. ",
+        "Lindsey Hernandez Counseling LLC provides trauma-informed counseling for children, teens, and adults across Pennsylvania.",
     },
   ];
 
   return (
-    <section className="project_con px-5 pb-29" >
+    <section className="project_con px-5 pb-29">
 
-      <div className="project-info flex justify-between items-center w-full font-bold mbe-5 ">
-        <h2 className="text-sm tracking-wider ">SELECTED WORK</h2>
+      <div className="project-info flex w-full items-center justify-between mb-5 font-bold">
+        <h2 className="text-sm tracking-wider">
+          SELECTED WORK
+        </h2>
 
         <Link
           to="/projects"
@@ -53,7 +54,17 @@ const Project = () => {
         </Link>
       </div>
 
-      <div className="project-boxes flex justify-between gap-5 text-start">
+
+      {/* Projects Grid */}
+      <div
+        className="
+          grid
+          grid-cols-1
+          sm:grid-cols-2
+          lg:grid-cols-4
+          gap-5
+        "
+      >
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
