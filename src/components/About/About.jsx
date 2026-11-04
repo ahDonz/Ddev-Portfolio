@@ -6,8 +6,8 @@ const About = () => {
   return (
     <>
           <section className="about_con px-5 py-20">
-      <div className="about_flex flex gap-10">
-        <div className="about_title max-w-[30%] w-full">
+      <div className="about_flex flex gap-10 max-[600px]:flex-col gap-10"> 
+        <div className="about_title max-w-[30%] w-full ">
           <h2 className="text-[15px] font-bold">WHAT I DO</h2>
         </div>
 
@@ -20,7 +20,7 @@ const About = () => {
 
 
     <section className="px-5 py-20">
-      <div className="flex gap-10">
+      <div className="flex gap-10 max-[600px]:flex-col " >
      <div className="max-w-[30%] w-full"> <h2 className="text-[15px] font-bold">SAY HELLO</h2> </div>
 
       <ContactInfo></ContactInfo>

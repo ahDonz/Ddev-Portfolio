@@ -11,10 +11,10 @@ const ContactInfo = () => {
   };
 
   return (
-    <div className="w-full max-w-[47%]">
+    <div className="w-full max-w-[47%] max-[600]: max-w-[100%]" >
       <h2 className="text-4xl font-medium">Contact me</h2>
 
-      <p className="mt-6 w-[83%] text-lg leading-relaxed text-gray-700 font-medium">
+      <p className="mt-6 w-[83%] text-lg leading-relaxed text-gray-700 font-medium max-[600px]:w-[100%]">
         I'm always open to hearing about new projects, ideas, or collaborations.
         Send me a note and I'll get in touch!
       </p>

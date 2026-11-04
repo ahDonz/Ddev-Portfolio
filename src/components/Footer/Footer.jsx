@@ -8,7 +8,7 @@ const Footer = () => {
   });
 
   return (
-    <footer className="w-full border-t border-gray-200 py-6">
+    <footer className="w-full border-t border-gray-200 py-6 mx-5" >
       <div className=" flex flex-col gap-3 text-sm text-gray-500 md:flex-row md:items-center md:justify-between">
 
         <div className="flex items-center gap-3">
