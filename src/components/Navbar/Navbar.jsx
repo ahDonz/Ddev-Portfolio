@@ -1,44 +1,25 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [hideNavbar, setHideNavbar] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setHideNavbar(window.scrollY > 80);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-   <header
-  className={`
-    fixed
-    top-0
-    left-0
-    z-50
-    w-full
-    max-w-full
-    bg-white
-    transition-all
-    duration-500
+    <header
+      className={`
+        fixed
+        top-0
+        left-0
+        z-50
+        w-full
+        max-w-full
+        bg-white
+        transition-all
+        duration-500
 
-   max-[1000px]:static
-
-
-      
-    ${
-      hideNavbar
-        ? "-translate-y-full opacity-0"
-        : "translate-y-0 opacity-100"
-    }
-  `}
->
+        max-[1000px]:static
+      `}
+    >
 
       <div className="nav-wrapper flex w-full max-w-full items-center justify-between px-4 py-2">
 
