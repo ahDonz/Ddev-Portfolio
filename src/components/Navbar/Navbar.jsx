@@ -6,22 +6,18 @@ const Navbar = () => {
 
   return (
     <header
-      className={`
+      className="
         fixed
         top-0
         left-0
         z-50
         w-full
-        max-w-full
         bg-white
-        transition-all
-        duration-500
-
-        max-[1000px]:static
-      `}
+      "
     >
 
       <div className="nav-wrapper flex w-full max-w-full items-center justify-between px-4 py-2">
+
 
         {/* Logo */}
         <Link
@@ -32,6 +28,7 @@ const Navbar = () => {
             Don <span className="block">Atillo</span>
           </h2>
         </Link>
+
 
 
         {/* Desktop Navigation */}
@@ -48,25 +45,78 @@ const Navbar = () => {
 
           <ul className="flex gap-4 text-[16px] font-semibold">
 
-            <li className="relative cursor-pointer before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-left before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:scale-x-100">
+
+            <li
+              className="
+              relative
+              cursor-pointer
+              before:absolute
+              before:bottom-0
+              before:left-0
+              before:h-[1px]
+              before:w-full
+              before:origin-left
+              before:scale-x-0
+              before:bg-black
+              before:transition-transform
+              before:duration-300
+              hover:before:scale-x-100
+              "
+            >
               <Link to="/work">
                 Work
               </Link>
             </li>
 
-            <li className="relative cursor-pointer before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-left before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:scale-x-100">
+
+            <li
+              className="
+              relative
+              cursor-pointer
+              before:absolute
+              before:bottom-0
+              before:left-0
+              before:h-[1px]
+              before:w-full
+              before:origin-left
+              before:scale-x-0
+              before:bg-black
+              before:transition-transform
+              before:duration-300
+              hover:before:scale-x-100
+              "
+            >
               <Link to="/about">
                 About
               </Link>
             </li>
 
-            <li className="relative cursor-pointer before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-left before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:scale-x-100">
+
+            <li
+              className="
+              relative
+              cursor-pointer
+              before:absolute
+              before:bottom-0
+              before:left-0
+              before:h-[1px]
+              before:w-full
+              before:origin-left
+              before:scale-x-0
+              before:bg-black
+              before:transition-transform
+              before:duration-300
+              hover:before:scale-x-100
+              "
+            >
               <Link to="/resume">
                 Resume
               </Link>
             </li>
 
+
           </ul>
+
 
 
           <Link
@@ -76,7 +126,9 @@ const Navbar = () => {
             Contact
           </Link>
 
+
         </div>
+
 
 
 
@@ -88,9 +140,9 @@ const Navbar = () => {
             hidden
             h-5
             w-7
-            shrink-0
             cursor-pointer
             max-[1000px]:block
+
 
             before:absolute
             before:left-0
@@ -100,18 +152,20 @@ const Navbar = () => {
             before:bg-black
             before:content-['']
 
+
             after:absolute
             after:left-0
             after:bottom-0
             after:h-[2px]
             after:w-7
             after:bg-black
-            after:content-['']
+            before:content-['']
+
 
             ${
               menuOpen
-                ? "before:top-[9px] before:rotate-45 after:bottom-[9px] after:-rotate-45"
-                : ""
+              ? "before:top-[9px] before:rotate-45 after:bottom-[9px] after:-rotate-45"
+              : ""
             }
           `}
         >
@@ -126,13 +180,21 @@ const Navbar = () => {
               -translate-y-1/2
               bg-black
               transition-all
-              ${menuOpen ? "opacity-0" : ""}
+
+              ${
+                menuOpen
+                ? "opacity-0"
+                : ""
+              }
             `}
           />
 
         </div>
 
+
       </div>
+
+
 
 
 
@@ -142,6 +204,7 @@ const Navbar = () => {
           absolute
           left-0
           top-full
+          z-50
           flex
           w-full
           flex-col
@@ -154,34 +217,55 @@ const Navbar = () => {
           duration-300
           min-[1001px]:hidden
 
+
           ${
             menuOpen
-              ? "translate-y-0 opacity-100"
-              : "-translate-y-5 pointer-events-none opacity-0"
+            ? "translate-y-0 opacity-100"
+            : "-translate-y-5 pointer-events-none opacity-0"
           }
+
         `}
       >
 
-        <Link to="/work" onClick={() => setMenuOpen(false)}>
+
+        <Link
+          to="/work"
+          onClick={() => setMenuOpen(false)}
+        >
           Work
         </Link>
 
-        <Link to="/about" onClick={() => setMenuOpen(false)}>
+
+        <Link
+          to="/about"
+          onClick={() => setMenuOpen(false)}
+        >
           About
         </Link>
 
-        <Link to="/resume" onClick={() => setMenuOpen(false)}>
+
+        <Link
+          to="/resume"
+          onClick={() => setMenuOpen(false)}
+        >
           Resume
         </Link>
 
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>
+
+        <Link
+          to="/contact"
+          onClick={() => setMenuOpen(false)}
+        >
           Contact
         </Link>
 
+
       </div>
+
 
     </header>
   );
 };
+
 
 export default Navbar;

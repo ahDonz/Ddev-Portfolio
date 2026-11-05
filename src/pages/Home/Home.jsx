@@ -1,18 +1,15 @@
-import Navbar from '../../components/Navbar/Navbar'
-import Banner from '../../components/Banner/Banner'
-import Project from '../../components/Project/Project'
-import About from '../../components/About/About'
-import Footer from '../../components/Footer/Footer'
+import Banner from "../../components/Banner/Banner";
+import Project from "../../components/Project/Project";
+import About from "../../components/About/About";
 
 const Home = () => {
   return (
     <>
-        <Navbar></Navbar>
-        <Banner/>
-        <Project></Project>
-        <About/>
-
+      <Banner />
+      <Project />
+      <About />
     </>
-  )
-}
-export default Home
+  );
+};
+
+export default Home;
