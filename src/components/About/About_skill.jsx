@@ -10,8 +10,8 @@ const AboutSkills = () => {
   ];
 
   return (
-    <div className="about_skill">
-      <div className="about_list">
+    <div className="about_skill" >
+      <div className="about_list" id="skill">
         <ul className="flex flex-wrap gap-2.5 list-none py-5">
 
           {skills.map((skill) => (

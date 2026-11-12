@@ -8,7 +8,7 @@ const AboutStack = () => {
         <h2 className="font-bold text-[17px]">Stack</h2>
 
         <Link
-            to="/stack" className="border border-black px-2 py-1 inline-flex items-center gap-2 hover:bg-black hover:text-white transition" > View All <span>→</span> </Link>
+            to="/about" className="border border-black px-2 py-1 inline-flex items-center gap-2 hover:bg-black hover:text-white transition" > View All <span>→</span> </Link>
       </div>
 
       <AboutSkills />

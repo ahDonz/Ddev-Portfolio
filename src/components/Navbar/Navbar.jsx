@@ -18,7 +18,6 @@ const Navbar = () => {
 
       <div className="nav-wrapper flex w-full max-w-full items-center justify-between px-4 py-2">
 
-
         {/* Logo */}
         <Link
           to="/"
@@ -28,7 +27,6 @@ const Navbar = () => {
             Don <span className="block">Atillo</span>
           </h2>
         </Link>
-
 
 
         {/* Desktop Navigation */}
@@ -46,89 +44,48 @@ const Navbar = () => {
           <ul className="flex gap-4 text-[16px] font-semibold">
 
 
-            <li
-              className="
-              relative
-              cursor-pointer
-              before:absolute
-              before:bottom-0
-              before:left-0
-              before:h-[1px]
-              before:w-full
-              before:origin-left
-              before:scale-x-0
-              before:bg-black
-              before:transition-transform
-              before:duration-300
-              hover:before:scale-x-100
-              "
-            >
+            <li className="relative cursor-pointer before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-left before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:scale-x-100">
               <Link to="/work">
                 Work
               </Link>
             </li>
 
 
-            <li
-              className="
-              relative
-              cursor-pointer
-              before:absolute
-              before:bottom-0
-              before:left-0
-              before:h-[1px]
-              before:w-full
-              before:origin-left
-              before:scale-x-0
-              before:bg-black
-              before:transition-transform
-              before:duration-300
-              hover:before:scale-x-100
-              "
-            >
+            <li className="relative cursor-pointer before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-left before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:scale-x-100">
               <Link to="/about">
                 About
               </Link>
             </li>
 
 
-            <li
-              className="
-              relative
-              cursor-pointer
-              before:absolute
-              before:bottom-0
-              before:left-0
-              before:h-[1px]
-              before:w-full
-              before:origin-left
-              before:scale-x-0
-              before:bg-black
-              before:transition-transform
-              before:duration-300
-              hover:before:scale-x-100
-              "
-            >
-              <Link to="/resume">
+            <li className="relative cursor-pointer before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-left before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:scale-x-100">
+              <a href="/Don_Johnson_Atillo_Resume.pdf" download>
                 Resume
-              </Link>
+              </a>
             </li>
 
 
           </ul>
 
 
-
           <Link
             to="/contact"
-            className="border border-black px-3 py-1"
+            className="
+              border
+              border-black
+              px-3
+              py-1
+              transition
+              duration-300
+              hover:bg-black
+              hover:text-white
+            "
           >
             Contact
           </Link>
 
 
         </div>
-
 
 
 
@@ -143,7 +100,6 @@ const Navbar = () => {
             cursor-pointer
             max-[1000px]:block
 
-
             before:absolute
             before:left-0
             before:top-0
@@ -152,15 +108,13 @@ const Navbar = () => {
             before:bg-black
             before:content-['']
 
-
             after:absolute
             after:left-0
             after:bottom-0
             after:h-[2px]
             after:w-7
             after:bg-black
-            before:content-['']
-
+            after:content-['']
 
             ${
               menuOpen
@@ -196,8 +150,6 @@ const Navbar = () => {
 
 
 
-
-
       {/* Mobile Menu */}
       <div
         className={`
@@ -216,7 +168,6 @@ const Navbar = () => {
           transition-all
           duration-300
           min-[1001px]:hidden
-
 
           ${
             menuOpen
@@ -244,12 +195,14 @@ const Navbar = () => {
         </Link>
 
 
-        <Link
-          to="/resume"
+        <a
+          href="/Don_Johnson_Atillo_Resume.pdf"
+          download
           onClick={() => setMenuOpen(false)}
+          className="hover:text-blue-600 transition duration-300"
         >
           Resume
-        </Link>
+        </a>
 
 
         <Link

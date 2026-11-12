@@ -46,12 +46,22 @@ const Project = () => {
           SELECTED WORK
         </h2>
 
-        <Link
-          to="/projects"
-          className="border border-black p-3"
-        >
-          See All
-        </Link>
+       <Link
+  to="/work"
+  className="
+    border 
+    border-black 
+    p-3 
+    rounded-lg
+    transition-all 
+    duration-300
+    hover:bg-black
+    hover:text-white
+    hover:scale-105
+  "
+>
+  See All
+</Link>
       </div>
 
 
