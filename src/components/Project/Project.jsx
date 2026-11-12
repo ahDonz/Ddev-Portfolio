@@ -11,30 +11,34 @@ const Project = () => {
     {
       id: 1,
       image: project1,
-      title: "Excel in Care Home Health Agency LLC",
+      title: "Stepwise ABA Therapy",
       description:
-        "Experience compassionate, personalized support designed to make daily life easier and more comfortable. Our dedicated caregivers assist with everyday tasks, ensuring safety, independence, and peace of mind.",
+        "A professional healthcare website designed to provide information about ABA therapy services, programs, and support for families seeking behavioral care solutions.",
+      link: "https://www.stepwiseabatherapy.com/",
     },
     {
       id: 2,
       image: project2,
-      title: "Quality Care Pharmacy",
+      title: "Best Choice HCS LLC",
       description:
-        "Welcome to Quality Care Pharmacy, your trusted partner in health and wellness. We are committed to providing safe, reliable, and personalized pharmaceutical care, ensuring you receive the right medication.",
+        "A healthcare service website focused on providing clear information about care services, company details, and helping clients connect with professional support.",
+      link: "https://www.bestchoicehcsllc.com/",
     },
     {
       id: 3,
       image: project3,
-      title: "DB Wellness and IV Therapy LLC",
+      title: "Dahlia Austin",
       description:
-        "DB Wellness and IV Therapy LLC provides IV therapy and wellness services focused on clear, structured care. The team handles each session from intake to post treatment guidance.",
+        "A modern business website created with a clean layout, responsive design, and user-friendly experience to showcase services and brand information.",
+      link: "https://www.dahliaaustin.com/",
     },
     {
       id: 4,
       image: project4,
-      title: "Lindsey Hernandez Counseling LLC",
+      title: "Mentor 365 Services",
       description:
-        "Lindsey Hernandez Counseling LLC provides trauma-informed counseling for children, teens, and adults across Pennsylvania.",
+        "A service-based website designed to present programs, resources, and company information with a responsive and accessible user experience.",
+      link: "https://www.mentor365services.org/",
     },
   ];
 
@@ -46,26 +50,25 @@ const Project = () => {
           SELECTED WORK
         </h2>
 
-       <Link
-  to="/work"
-  className="
-    border 
-    border-black 
-    p-3 
-    rounded-lg
-    transition-all 
-    duration-300
-    hover:bg-black
-    hover:text-white
-    hover:scale-105
-  "
->
-  See All
-</Link>
+        <Link
+          to="/work"
+          className="
+            border 
+            border-black 
+            p-3 
+            rounded-lg
+            transition-all 
+            duration-300
+            hover:bg-black
+            hover:text-white
+            hover:scale-105
+          "
+        >
+          See All
+        </Link>
       </div>
 
 
-      {/* Projects Grid */}
       <div
         className="
           grid
@@ -81,6 +84,7 @@ const Project = () => {
             image={project.image}
             title={project.title}
             description={project.description}
+            link={project.link}
           />
         ))}
       </div>
