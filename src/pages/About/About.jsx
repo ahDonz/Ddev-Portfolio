@@ -1,4 +1,6 @@
 import PageTitle from "../../components/PageTitle";
+import ProfileImg from "../../images/DCS_PROFILE_LINKED.jpg";
+
 
 const About = () => {
 
@@ -45,19 +47,23 @@ const About = () => {
           "
         >
 
-          <div
+         <div
+          className="
+            h-[350px]
+            bg-black
+            overflow-hidden
+          "
+        >
+          <img
+            src={ProfileImg}
+            alt="Profile"
             className="
               w-full
-              md:w-[40%]
-              max-w-[450px]
+              h-full
+              object-cover
             "
-          >
-            <div className="
-              h-[350px]
-              bg-black
-            ">
-            </div>
-          </div>
+          />
+        </div>
 
 
 
