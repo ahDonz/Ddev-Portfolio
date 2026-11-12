@@ -24,7 +24,7 @@ const AboutSkills = () => {
           ))}
 
           <li className="w-full max-w-[140px] text-center border border-gray-300 p-1">
-            <a href="/skills">
+            <a href="/work">
               + More
             </a>
           </li>
