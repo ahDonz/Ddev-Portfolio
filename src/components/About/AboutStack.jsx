@@ -9,6 +9,7 @@ const AboutStack = () => {
 
         <Link
             to="/about" className="border border-black px-2 py-1 inline-flex items-center gap-2 hover:bg-black hover:text-white transition" > View All <span>→</span> </Link>
+            
       </div>
 
       <AboutSkills />
