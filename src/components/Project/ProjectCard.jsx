@@ -11,7 +11,7 @@ const ProjectCard = ({ image, title, description, link }) => {
         hover:scale-105
       "
     >
-      <div className="project-box w-full bg-gray-200 overflow-hidden">
+      <div className="project-box w-full bg-gray-200 overflow-hidden pb-5">
 
         <img
           className="
@@ -27,7 +27,7 @@ const ProjectCard = ({ image, title, description, link }) => {
         />
 
         <div className="project-info p-5">
-          <h2 className="mb-5 text-2xl font-semibold">
+          <h2 className="mb-5 text-xl font-semibold min-h-10">
             {title}
           </h2>
 

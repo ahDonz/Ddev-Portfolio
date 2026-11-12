@@ -56,7 +56,7 @@ const About = () => {
         >
           <img
             src={ProfileImg}
-            alt="Profile"
+            alt="Don Johnson professional profile photo"
             className="
               w-full
               h-full

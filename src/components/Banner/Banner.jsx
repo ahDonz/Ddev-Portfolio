@@ -38,7 +38,7 @@ const Banner = () => {
         >
           <img
             src={bnrImage}
-            alt=""
+           alt="Anime-style portrait of Don"
             className="w-full h-full object-cover"
           />
         </div>
